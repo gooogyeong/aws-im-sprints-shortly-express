@@ -7,7 +7,7 @@ const POST_URL_SUCCESS = 'POST_URL_SUCCESS';
 const POST_URL_FAILURE = 'POST_URL_FAILUER';
 
 function postUrlAPI(data) {
-  return axios.post('http://localhost:3001/links', data);
+  return axios.post('http://3.135.237.103:3001/links', data); //http://localhost:3001
 }
 
 const initialState = {

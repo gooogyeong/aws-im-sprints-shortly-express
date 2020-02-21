@@ -11,11 +11,11 @@ const LOGOUT = 'LOGOUT';
 axios.defaults.withCredentials = true;
 
 function postLoginAPI(data) {
-  return axios.post('http://localhost:3001/user/signin', data);
+  return axios.post('http://3.135.237.103:3001/user/signin', data); //
 }
 
 function postLogoutAPI() {
-  return axios.post('http://localhost:3001/user/signout');
+  return axios.post('http://3.135.237.103:3001/user/signout');
 }
 
 const initialState = {
