@@ -14,6 +14,16 @@ module.exports = {
       
       //console.log(result[0].dataValues)
       res.send(result[0].dataValues)
+    //   signin해서 session 객체에 UserId가 부여된 상태에서
+    //   localhost:3001/user/info에 get 요청 보내면 다음과 같은 body를 가진 response가 온다:
+    //   {
+    //     "id": 1,
+    //     "email": "duhyun.kim@codestates.com",
+    //     "username": "duhyundev",
+    //     "password": "1234",
+    //     "createdAt": "2020-02-18T12:59:06.000Z",
+    //     "updatedAt": "2020-02-18T12:59:06.000Z"
+    // }
     })
     // 2. 세션정보에 알맞은 정보를 디비에서 찾아서 보내준다?
     }
